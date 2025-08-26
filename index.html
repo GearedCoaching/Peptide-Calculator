@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peptide Calculator | Geared Coaching</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Peptide Dose Calculator</h1>
+        <p>Use this tool to precisely calculate your peptide dose. Select your injection method and input the details to get an accurate result.</p>
+
+        <form id="peptideForm">
+            <div class="input-group">
+                <label for="injectionType">Injection Type</label>
+                <select id="injectionType" name="injectionType">
+                    <option value="syringe">Syringe</option>
+                    <option value="pen">Pen</option>
+                </select>
+            </div>
+
+            <div id="syringeFields" class="input-section">
+                <div class="input-group">
+                    <label for="compoundMgSyringe">Compound Amount (mg)</label>
+                    <input type="number" id="compoundMgSyringe" name="compoundMgSyringe" required>
+                </div>
+                <div class="input-group">
+                    <label for="bacWaterMl">Bac Water (ml)</label>
+                    <input type="number" id="bacWaterMl" name="bacWaterMl" required>
+                </div>
+            </div>
+
+            <div id="penFields" class="input-section" style="display:none;">
+                <div class="input-group">
+                    <label for="compoundMgPen">Compound Amount (mg)</label>
+                    <input type="number" id="compoundMgPen" name="compoundMgPen" required>
+                </div>
+                <div class="input-group">
+                    <label for="penUnits">Total Pen Units</label>
+                    <input type="number" id="penUnits" name="penUnits" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="desiredDoseMcg">Desired Dose (mcg)</label>
+                <input type="number" id="desiredDoseMcg" name="desiredDoseMcg" required>
+            </div>
+
+            <button type="submit" class="calculate-btn">Calculate</button>
+        </form>
+
+        <div id="result-container" class="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
