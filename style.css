@@ -1,0 +1,105 @@
+body {
+    background-color: #1c1c1c; /* Primary dark color */
+    color: #f9f9f9; /* White for clarity */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    background-color: #2a2a2a; /* Slightly lighter dark for contrast */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #b73239; /* Muted red accent */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    color: #7a7a7a; /* Grey for supporting text */
+    line-height: 1.6;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #f9f9f9;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f9f9f9;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23f9f9f9"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.calculate-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #b73239;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background-color: #e2a53e; /* Gold accent on hover */
+}
+
+.result-container {
+    margin-top: 25px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+    .calculator-container {
+        padding: 20px;
+    }
+}
